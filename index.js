@@ -13,7 +13,7 @@ import {
 } from './controllers/pet-controller.js';
 import fs from 'fs';
 const port = process.env.PORT || 4001;
-const dbUrl = process.env.DB_URI || 'mongodb://localhost:27017/pet';
+const dbUrl = process.env.DB;
 
 const storage = multer.diskStorage({
   destination: (_, __, cb) => {
